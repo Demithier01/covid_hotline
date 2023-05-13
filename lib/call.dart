@@ -10,7 +10,9 @@ class Call extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("สายด่วน"),
+          title: Text(
+            "สายด่วน",
+          ),
           backgroundColor: Color.fromARGB(255, 221, 82, 82),
         ),
         body: Container(
@@ -47,22 +49,29 @@ class Call extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Image.network(
-                              'https://gdcatalog.go.th/assets/images/organization_logo/sukkapabjitt.png'),
+                          Container(
+                              width: 120,
+                              height: 120,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(50),
+                                child: Image.network(
+                                    'https://gdcatalog.go.th/assets/images/organization_logo/sukkapabjitt.png'),
+                              )),
                           SizedBox(
-                            width: 10,
+                            width:15,
                           ),
-                          SelectableText(
+                          Text(
                             'ปรึกษาสุขภาพจิต',
                             style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "NotoSansThai",
+                                color: Colors.white),
                           )
                         ],
                       ),
                       const SizedBox(
-                        width: 10,
+                        width: 15,
                       ),
                       ElevatedButton(
                         onPressed: () async {
@@ -100,20 +109,26 @@ class Call extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Image.network(
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Seal_of_the_Office_of_the_Prime_Minister_of_Thailand.svg/1200px-Seal_of_the_Office_of_the_Prime_Minister_of_Thailand.svg.png',
+                          Container(
                             width: 100,
-                            height: 150,
+                            height: 100,
+                            child: ClipRRect(
+                                borderRadius: BorderRadius.circular(50),
+                                child: Image.network(
+                                  'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Seal_of_the_Office_of_the_Prime_Minister_of_Thailand.svg/1200px-Seal_of_the_Office_of_the_Prime_Minister_of_Thailand.svg.png',
+                                  width: 100,
+                                  height: 150,
+                                )),
                           ),
                           SizedBox(
                             width: 10,
                           ),
-                          SelectableText(
+                          Text(
                             'สอบถามข้อมูลโควิด-19',
                             style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ],
                       ),
@@ -156,25 +171,29 @@ class Call extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Image.network(
-                            'https://www.logo-th.com/wp-content/uploads/2018/12/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%9E%E0%B8%97%E0%B8%A2%E0%B9%8C%E0%B8%89%E0%B8%B8%E0%B8%81%E0%B9%80%E0%B8%89%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4.jpg',
-                            width: 100,
-                            height: 150,
-                          ),
+                          Container(
+                              width: 100,
+                              height: 100,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(50),
+                                child: Image.network(
+                                  'https://www.logo-th.com/wp-content/uploads/2018/12/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%9E%E0%B8%97%E0%B8%A2%E0%B9%8C%E0%B8%89%E0%B8%B8%E0%B8%81%E0%B9%80%E0%B8%89%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4.jpg',
+                                ),
+                              )),
                           SizedBox(
-                            width: 10,
+                            width: 40,
                           ),
-                          SelectableText(
+                          Text(
                             'แจ้งป่วยฉุกเฉิน',
                             style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ],
                       ),
                       const SizedBox(
-                        width: 10,
+                        width: 40,
                       ),
                       ElevatedButton(
                         onPressed: () async {
@@ -212,22 +231,28 @@ class Call extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Image.network(
-                              'https://ddc.moph.go.th/img/logo_web.png'),
+                          Container(
+                              width: 100,
+                              height: 100,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(50),
+                                child: Image.network(
+                                    'https://ddc.moph.go.th/img/logo_web.png'),
+                              )),
                           SizedBox(
-                            width: 10,
+                            width:40,
                           ),
-                          SelectableText(
+                          Text(
                             'สอบถามข้อมูล',
                             style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ],
                       ),
                       const SizedBox(
-                        width: 10,
+                        width: 40,
                       ),
                       ElevatedButton(
                         onPressed: () async {
@@ -265,24 +290,29 @@ class Call extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Image.network(
-                              'https://yt3.googleusercontent.com/oJgQqE-HLakC2Yi4C0IJmnSztrRwp5hRRScu38ld-imKBl68WzsDS6kNDLVIXJ2JeWb64MJ1Iw=s900-c-k-c0x00ffffff-no-rj',
+                          Container(
                               width: 100,
-                              height: 150),
+                              height: 100,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(30),
+                                child: Image.network(
+                                  'https://yt3.googleusercontent.com/oJgQqE-HLakC2Yi4C0IJmnSztrRwp5hRRScu38ld-imKBl68WzsDS6kNDLVIXJ2JeWb64MJ1Iw=s900-c-k-c0x00ffffff-no-rj',
+                                ),
+                              )),
                           SizedBox(
-                            width: 10,
+                            width: 20,
                           ),
-                          SelectableText(
+                          Text(
                             'สอบถามสิทธิ์รักษา',
                             style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ],
                       ),
                       const SizedBox(
-                        width: 10,
+                        width: 30,
                       ),
                       ElevatedButton(
                         onPressed: () async {
@@ -320,24 +350,29 @@ class Call extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Image.network(
-                              'https://logo-th.com/wp-content/uploads/2019/07/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%A1.jpg',
+                          Container(
                               width: 100,
-                              height: 150),
+                              height: 100,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(30),
+                                child: Image.network(
+                                  'https://logo-th.com/wp-content/uploads/2019/07/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%A1.jpg',
+                                ),
+                              )),
                           SizedBox(
                             width: 10,
                           ),
-                          SelectableText(
+                          Text(
                             'เช็คสิทธิ์ประกันสังคม',
                             style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ],
                       ),
                       const SizedBox(
-                        width: 10,
+                        width: 20,
                       ),
                       ElevatedButton(
                         onPressed: () async {
@@ -375,19 +410,24 @@ class Call extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Image.network(
-                              'https://yt3.googleusercontent.com/ytc/AGIKgqNFbdnpl2JFaUAktSt3y0u5BTHexG9asXhzlvQs=s900-c-k-c0x00ffffff-no-rj',
+                          Container(
                               width: 100,
-                              height: 150),
+                              height: 100,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(30),
+                                child: Image.network(
+                                  'https://mlth-s3.s3.ap-southeast-1.amazonaws.com/uploads/news/thumbnails/WR6yf1641520985.png',
+                                ),
+                              )),
                           SizedBox(
-                            width: 10,
+                            width: 5,
                           ),
-                          SelectableText(
-                            'ให้คำปรึกษาผู้ป่วย',
+                          Text(
+                            'ให้คำปรึกษาผู้ป่วยโควิด',
                             style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ],
                       ),
@@ -416,35 +456,6 @@ class Call extends StatelessWidget {
                     ],
                   ),
                 ),
-                // Container(
-                //     // autogroupseyukBh (Gx7SnURGM6kotY49j3SEyu)
-                //     margin: EdgeInsets.all(5.0),
-                //     width: double.infinity,
-                //     height: 67,
-                //     child: Stack(children: [
-                //       Positioned(
-                //         // Tro (216:420)
-                //         left: 58,
-                //         top: 10,
-                //         child: Align(
-                //           child: SizedBox(
-                //             width: 212,
-                //             height: 48,
-                //           ),
-                //         ),
-                //       ),
-                //       //สุขภาพจิต
-                //       SingleChildScrollView(
-                //         child: Padding(
-                //           padding: const EdgeInsets.all(8.0),
-                //           child: Column(
-                //             children: [
-
-                //             ],
-                //           ),
-                //         ),
-                //       ),
-                //     ]))
               ],
             ),
           ),
