@@ -13,7 +13,7 @@ class Call extends StatelessWidget {
           title: Text(
             "สายด่วน",
           ),
-          backgroundColor: Color.fromARGB(255, 221, 82, 82),
+          backgroundColor: Color.fromARGB(255, 255, 97, 97),
         ),
         body: Container(
           // พื้นหลัง
@@ -50,20 +50,20 @@ class Call extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                              width: 120,
-                              height: 120,
+                              width: 70,
+                              height: 70,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(50),
                                 child: Image.network(
                                     'https://gdcatalog.go.th/assets/images/organization_logo/sukkapabjitt.png'),
                               )),
                           SizedBox(
-                            width:15,
+                            width:25,
                           ),
                           Text(
                             'ปรึกษาสุขภาพจิต',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize:14,
                                 fontWeight: FontWeight.bold,
                                 fontFamily: "NotoSansThai",
                                 color: Colors.white),
@@ -71,7 +71,7 @@ class Call extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(
-                        width: 15,
+                        width: 30,
                       ),
                       ElevatedButton(
                         onPressed: () async {
@@ -110,8 +110,8 @@ class Call extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                            width: 100,
-                            height: 100,
+                            width: 60,
+                            height: 60,
                             child: ClipRRect(
                                 borderRadius: BorderRadius.circular(50),
                                 child: Image.network(
@@ -121,19 +121,19 @@ class Call extends StatelessWidget {
                                 )),
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 15,
                           ),
                           Text(
                             'สอบถามข้อมูลโควิด-19',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
                         ],
                       ),
                       const SizedBox(
-                        width: 10,
+                        width: 15,
                       ),
                       ElevatedButton(
                         onPressed: () async {
@@ -172,8 +172,8 @@ class Call extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(50),
                                 child: Image.network(
@@ -186,7 +186,7 @@ class Call extends StatelessWidget {
                           Text(
                             'แจ้งป่วยฉุกเฉิน',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
@@ -232,27 +232,27 @@ class Call extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(50),
                                 child: Image.network(
                                     'https://ddc.moph.go.th/img/logo_web.png'),
                               )),
                           SizedBox(
-                            width:40,
+                            width:10,
                           ),
                           Text(
-                            'สอบถามข้อมูล',
+                            'สอบถามข้อมูลด้านสุขภาพ',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
                         ],
                       ),
                       const SizedBox(
-                        width: 40,
+                        width: 10,
                       ),
                       ElevatedButton(
                         onPressed: () async {
@@ -291,8 +291,8 @@ class Call extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(30),
                                 child: Image.network(
@@ -303,16 +303,16 @@ class Call extends StatelessWidget {
                             width: 20,
                           ),
                           Text(
-                            'สอบถามสิทธิ์รักษา',
+                            'สอบถามสิทธิ์การรักษา',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
                         ],
                       ),
                       const SizedBox(
-                        width: 30,
+                        width: 20
                       ),
                       ElevatedButton(
                         onPressed: () async {
@@ -351,28 +351,28 @@ class Call extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(30),
+                                borderRadius: BorderRadius.circular(10),
                                 child: Image.network(
                                   'https://logo-th.com/wp-content/uploads/2019/07/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%A1.jpg',
                                 ),
                               )),
                           SizedBox(
-                            width: 10,
+                            width: 20,
                           ),
                           Text(
                             'เช็คสิทธิ์ประกันสังคม',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
                         ],
                       ),
                       const SizedBox(
-                        width: 20,
+                        width: 30,
                       ),
                       ElevatedButton(
                         onPressed: () async {
@@ -411,10 +411,10 @@ class Call extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                              width: 100,
-                              height: 100,
+                              width:60,
+                              height:60,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(30),
+                                borderRadius: BorderRadius.circular(10),
                                 child: Image.network(
                                   'https://mlth-s3.s3.ap-southeast-1.amazonaws.com/uploads/news/thumbnails/WR6yf1641520985.png',
                                 ),
@@ -423,9 +423,9 @@ class Call extends StatelessWidget {
                             width: 5,
                           ),
                           Text(
-                            'ให้คำปรึกษาผู้ป่วยโควิด',
+                            'ให้คำปรึกษาผู้ป่วยโควิด-19',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
